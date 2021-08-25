@@ -53,8 +53,8 @@
 #define UPDATE_HASH(s, h, val) \
     h = __crc32w(0, val)
 
-#define INSERT_STRING       insert_string_acle
-#define QUICK_INSERT_STRING quick_insert_string_acle
+#define INSERT_STRING       TARGET_ARMV8_WITH_CRC insert_string_acle
+#define QUICK_INSERT_STRING TARGET_ARMV8_WITH_CRC quick_insert_string_acle
 
 #include "../../insert_string_tpl.h"
 #endif
